@@ -1,19 +1,38 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+[
+  {
+      "id": "0", 
+      "name": "Csaba",
+      "qualification": "6",
+      "position": "hátvéd",
+      "club": "Aranyszarvas Se.",
+      "age": "18", 
+      "nationality": "magyar" 
+  },
+  {
+      "id": "1", 
+      "name": "Tamas",
+      "qualification": "9",
+      "position": "csatár",
+      "club": "Junkie Se",
+      "age": "19", 
+      "nationality": "román" 
+  },
+  {
+      "id": "2", 
+      "name": "Martin",
+      "qualification": "4",
+      "position": "kapus",
+      "club": "nonRP Se",
+      "age": "9", 
+      "nationality": "ismeretlen" 
+  },
+  {
+      "id": "3", 
+      "name": "milán",
+      "qualification": "7",
+      "position": "kapus",
+      "club": "ehhhSE",
+      "age": "69", 
+      "nationality": "Dél-Afrikai" 
   }
-}
+]
