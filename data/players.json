@@ -1,0 +1,38 @@
+[
+    {
+        "id": "string", 
+        "name": "string",
+        "qualification": "int",
+        "position": "string",
+        "club": "string",
+        "age": "int", 
+        "nationality": "string" 
+    },
+    {
+        "id": "string", 
+        "name": "string",
+        "qualification": "int",
+        "position": "string",
+        "club": "string",
+        "age": "int", 
+        "nationality": "string" 
+    },
+    {
+        "id": "string", 
+        "name": "string",
+        "qualification": "int",
+        "position": "string",
+        "club": "string",
+        "age": "int", 
+        "nationality": "string" 
+    },
+    {
+        "id": "string", 
+        "name": "string",
+        "qualification": "int",
+        "position": "string",
+        "club": "string",
+        "age": "int", 
+        "nationality": "string" 
+    }
+]
