@@ -43,7 +43,7 @@ app.get('/players', function (req, res) {
 
 
 //delete product by id
-app.delete('/products/:id', function (req, res) {
+app.delete('/players/:id', function (req, res) {
     let id = req.params.id;
 
     //beolvassuk az összes adatot: json -> obj
@@ -76,7 +76,7 @@ app.delete('/products/:id', function (req, res) {
 })
 
 //put product by id
-app.put('/products/:id', bodyParser.json(),function (req, res) {
+app.put('/players/:id', bodyParser.json(),function (req, res) {
     let id = req.params.id;
     let putProduct = {
         id: id, 
