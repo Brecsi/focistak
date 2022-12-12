@@ -34,7 +34,7 @@ app.get('/products/:id', function (req, res) {
 })
 
 //get products
-app.get('/products', function (req, res) {
+app.get('/players', function (req, res) {
     fs.readFile(dataFile, (error, data)=>{
         let products = data;
         res.send(products);
@@ -43,7 +43,7 @@ app.get('/products', function (req, res) {
 
 
 //delete product by id
-app.delete('/products/:id', function (req, res) {
+app.delete('/players/:id', function (req, res) {
     let id = req.params.id;
 
     //beolvassuk az összes adatot: json -> obj
@@ -76,14 +76,16 @@ app.delete('/products/:id', function (req, res) {
 })
 
 //put product by id
-app.put('/products/:id', bodyParser.json(),function (req, res) {
+app.put('/players/:id', bodyParser.json(),function (req, res) {
     let id = req.params.id;
     let putProduct = {
         id: id, 
         name: sanitizeHtml(req.body.name),
-        quantity: req.body.quantity,
-        price: req.body.price,
-        type: sanitizeHtml(req.body.type)
+        qualification: req.body.qualification,
+        position: sanitizeHtml(req.body.position),
+        club: sanitizeHtml(req.body.club),
+        age: req.body.age,
+        nationality: sanitizeHtml(req.body.nationality)
     }
     //beolvassuk az összes adatot: json -> obj
     fs.readFile(dataFile, (error, data)=>{
@@ -115,13 +117,15 @@ app.put('/products/:id', bodyParser.json(),function (req, res) {
 })
 
 //post
-app.post('/products',bodyParser.json(), function (req, res) {
+app.post('/players',bodyParser.json(), function (req, res) {
     let newProduct = {
         id: uniqid(), 
         name: sanitizeHtml(req.body.name),
-        quantity: req.body.quantity,
-        price: req.body.price,
-        type: sanitizeHtml(req.body.type)
+        qualification: req.body.qualification,
+        position: sanitizeHtml(req.body.position),
+        club: sanitizeHtml(req.body.club),
+        age: req.body.age,
+        nationality: sanitizeHtml(req.body.nationality)
     }
 
     
